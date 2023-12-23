@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=Caprasimo&family=Chakra+Petch:wght@300&family=Cormorant:wght@300&family=Inclusive+Sans&family=Lobster&family=Lobster+Two&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@100;400&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-main-top: #c4c3c377;
+  --color-maintop-text-hover: #4e4d4d;
+
+  --color-btn-menu: #ffd991;
+  --color-btn-menu-selecionado: #f3c368;
+  --color-btn-menu-selecionado-text: #5e3500;
+
+  --color-btn-media: #f8a711ce;
+
+  --color-btn-red-light: #ff0000a2;
+  --color-btn-red-dark: #ff0000d2;
+  --color-btn-blue-light: #0000ffad;
+  --color-btn-blue-dark: #0000ffd8;
+
+  --font-chakra: "Chakra Petch";
+  --font-bebas: "Bebas Neue";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-top {
+  padding: 0 4%;
+  height: 2rem;
+  background-color: var(--color-main-top);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.main-top p {
+  font-size: 1.2rem;
+  font-family: var(--font-chakra);
+  color: var(--color-black);
+}
+
+/* .main-top p:first-of-type {
+  margin-left: 16rem;
+} */
+
+.main-top p:hover {
+  color: var(--color-maintop-text-hover);
+}
+
+/* MAIN BOTTOM  */
+
+.main-bottom {
+  width: 100%;
+  height: 100%;
+  padding: 0 2%;
+}
+
+.content-btns {
+  width: 100%;
+  height: 8rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+
+  background-color: var(--color-btn-menu);
+  box-shadow: 2px 2px 2px #00000085;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: var(--font-chakra);
+  font-weight: bold;
+  /* color: var(--color-white); */
+}
+
+.btn:hover {
+  background-color: var(--color-btn-menu-selecionado);
+}
+
+.btn.selecionado {
+  background-color: var(--color-btn-menu-selecionado);
+  color: var(--color-btn-menu-selecionado-text);
+}
+
+/*  CONTEÚDO DOS CARDS */
+
+.content-cards {
+  width: 100%;
+  height: 100%;
+}
+
+.content-cards ul {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  place-items: center;
+  gap: 2rem;
+
+  margin-block: 3rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  width: 17rem;
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #0000007e;
+}
+
+.img-card {
+  width: 100%;
+  height: 25rem;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.img-card img {
+  width: 100%;
+  object-fit: cover;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.img-card h1 {
+  width: 100%;
+  font-family: var(--font-bebas);
+  color: var(--color-white);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* INFORMAÇÕES */
+
+.content-info {
+  width: 100%;
+  height: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  /* gap: ; */
+}
+
+.info {
+  width: 100%;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+
+.info-top {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  letter-spacing: 1px;
+  /* font-family: "Space Grotesk"; */
+}
+
+.info-bottom {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-top,
+.info-bottom {
+  font-family: var(--font-bebas);
+  font-size: 1.1rem;
+}
+
+.score {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.score h3 {
+  font-family: var(--font-chakra);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.score-numbers {
+  background-color: var(--color-black);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score-numbers p {
+  font-family: var(--font-chakra);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+/* MÉDIA */
+
+.box-media {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 4rem;
+}
+
+.show {
+  display: flex;
+}
+
+.btnAllMedia {
+  display: flex;
+  gap: 2rem;
+}
+
+.btnMedia {
+  width: 6rem;
+  height: 6rem;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-btn-media);
+
+  font-size: 0.9rem;
+  font-family: var(--font-chakra);
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #00000085;
+}
+
+.btnMedia:hover {
+  opacity: 0.9;
+}
+
+.btnMedia.btnMediaSelecionado {
+  border: 2px solid var(--color-black);
+}
+
+.subtitleMedia {
+  font-size: 1.7rem;
+  font-family: var(--font-chakra);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardMedia {
+  width: 22rem;
+  height: 7rem;
+
+  list-style-type: none;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px #0000007e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cardMedia p {
+  font-size: 1.7rem;
+  font-family: var(--font-bebas);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.cardMedia p:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 2px #00000096;
+}
+
+/* CONFERÊNCIA */
+
+.box-conference {
+  display: none;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 3rem;
+}
+
+.showBtnsConference {
+  display: flex;
+}
+
+.btnConference {
+  width: 7.5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  color: var(--color-white);
+  font-size: 2rem;
+  font-family: var(--font-chakra);
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 2px #00000085;
+}
+
+.btnConference.selecionadoConference {
+  border: 2px solid var(--color-white);
+  opacity: 0.6;
+}
+
+#east {
+  background-color: var(--color-btn-red-dark);
+}
+
+#east:hover {
+  background-color: var(--color-btn-red-light);
+}
+
+#west {
+  background-color: var(--color-btn-blue-dark);
+}
+
+#west:hover {
+  background-color: var(--color-btn-blue-light);
+}
