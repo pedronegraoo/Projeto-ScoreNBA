@@ -49,7 +49,7 @@ header h1 {
 header p {
   font-size: 1.5rem;
   font-family: var(--font-chakra);
-  text-shadow: 2px 2px 8px #00000096;
+  text-shadow: 2px 2px 2px #00000096;
 }
 
 .redes-sociais {
