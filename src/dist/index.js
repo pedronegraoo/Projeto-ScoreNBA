@@ -102,7 +102,6 @@ function showStats22() {
         }
         return player;
     });
-    // console.log(stats22);
     showAllItens(stats22);
     return stats22;
 }
@@ -152,7 +151,6 @@ function showStats21() {
         }
         return player;
     });
-    // console.log(stats21);
     showAllItens(stats21);
     return stats21;
 }
@@ -202,18 +200,13 @@ function showStats20() {
         }
         return player;
     });
-    // console.log(stats20);
     showAllItens(stats20);
     return stats20;
 }
-// MEDIA
 function mediaAllStats() {
     boxCards.innerHTML = "";
     boxConference.classList.remove("showBtnsConference");
     boxMedia.classList.add("show");
-    // let resultPoint: number = mediaPoints();
-    // let resultReb: number = mediaReb();
-    // let resultAst: number = mediaAst();
 }
 btnAllSeason.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -250,7 +243,7 @@ btnAllSeason.forEach((btn) => {
 function changeBtnMedia(btn) {
     let selecionado = document.querySelector(".btnMediaSelecionado");
     if (selecionado) {
-        selecionado === null || selecionado === void 0 ? void 0 : selecionado.classList.remove("btnMediaSelecionado");
+        selecionado?.classList.remove("btnMediaSelecionado");
     }
     btn.classList.add("btnMediaSelecionado");
 }
@@ -284,7 +277,6 @@ function mediaAst(stats) {
     assist.textContent = `AST ${mediaStatsAst}`;
     return mediaStatsAst;
 }
-// CONFERÊNCIA
 function playersConference() {
     boxCards.innerHTML = "";
     boxMedia.classList.remove("show");
@@ -321,20 +313,13 @@ function showWest() {
 function changeBtnConference(btn) {
     let selecionado = document.querySelector(".selecionadoConference");
     if (selecionado) {
-        selecionado === null || selecionado === void 0 ? void 0 : selecionado.classList.remove("selecionadoConference");
+        selecionado?.classList.remove("selecionadoConference");
     }
     btn.classList.add("selecionadoConference");
 }
-btnShowAll22 === null || btnShowAll22 === void 0 ? void 0 : btnShowAll22.addEventListener("click", showStats22);
-btnShowAll21 === null || btnShowAll21 === void 0 ? void 0 : btnShowAll21.addEventListener("click", showStats21);
-btnShowAll20 === null || btnShowAll20 === void 0 ? void 0 : btnShowAll20.addEventListener("click", showStats20);
-btnMediaAllStats === null || btnMediaAllStats === void 0 ? void 0 : btnMediaAllStats.addEventListener("click", mediaAllStats);
-btnConference === null || btnConference === void 0 ? void 0 : btnConference.addEventListener("click", playersConference);
+btnShowAll22?.addEventListener("click", showStats22);
+btnShowAll21?.addEventListener("click", showStats21);
+btnShowAll20?.addEventListener("click", showStats20);
+btnMediaAllStats?.addEventListener("click", mediaAllStats);
+btnConference?.addEventListener("click", playersConference);
 document.addEventListener("DOMContentLoaded", () => showAllItens(menuPlayers));
-// function showStats21() {
-//   let stats21: string[] = menuPlayers.map((player) => {
-//     console.log(player.name);
-//     return player.name;
-//   });
-//   console.log(stats21);
-// }
