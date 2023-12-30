@@ -27,7 +27,7 @@ interface IMenu {
 
 btnAll.forEach((btn) => {
   btn.addEventListener("click", () => {
-    console.log(btn.id);
+    // console.log(btn.id);
 
     const selecionado = document.querySelector(".btn.selecionado");
     if (selecionado) {
@@ -304,7 +304,6 @@ function mediaPoints(stats: IMenu[]): number {
 
     return +result.toFixed(2);
   }, 0);
-  console.log(`Pontos ${mediaStatsPoints}`);
 
   points.textContent = `PTS ${mediaStatsPoints}`;
 
@@ -317,7 +316,6 @@ function mediaReb(stats: IMenu[]): number {
 
     return +result.toFixed(2);
   }, 0);
-  console.log(`Rebotes - ${mediaStatsReb}`);
 
   rebotes.textContent = `REB ${mediaStatsReb}`;
 
@@ -330,7 +328,6 @@ function mediaAst(stats: IMenu[]): number {
 
     return +result.toFixed(2);
   }, 0);
-  console.log(`Assistêcia - ${mediaStatsAst}`);
 
   assist.textContent = `AST ${mediaStatsAst}`;
 

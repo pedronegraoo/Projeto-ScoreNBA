@@ -12,7 +12,6 @@ const boxMedia = document.querySelector(".box-media");
 const boxConference = document.querySelector(".box-conference");
 btnAll.forEach((btn) => {
     btn.addEventListener("click", () => {
-        console.log(btn.id);
         const selecionado = document.querySelector(".btn.selecionado");
         if (selecionado) {
             selecionado.classList.remove("selecionado");
@@ -255,7 +254,6 @@ function mediaPoints(stats) {
         let result = acumulador + atual.point / stats.length;
         return +result.toFixed(2);
     }, 0);
-    console.log(`Pontos ${mediaStatsPoints}`);
     points.textContent = `PTS ${mediaStatsPoints}`;
     return mediaStatsPoints;
 }
@@ -264,7 +262,6 @@ function mediaReb(stats) {
         let result = acumulador + atual.reb / stats.length;
         return +result.toFixed(2);
     }, 0);
-    console.log(`Rebotes - ${mediaStatsReb}`);
     rebotes.textContent = `REB ${mediaStatsReb}`;
     return mediaStatsReb;
 }
@@ -273,7 +270,6 @@ function mediaAst(stats) {
         let result = acumulador + atual.ast / stats.length;
         return +result.toFixed(2);
     }, 0);
-    console.log(`Assistêcia - ${mediaStatsAst}`);
     assist.textContent = `AST ${mediaStatsAst}`;
     return mediaStatsAst;
 }
