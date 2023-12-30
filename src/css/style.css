@@ -1,25 +1,75 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=Caprasimo&family=Chakra+Petch:wght@300&family=Cormorant:wght@300&family=Inclusive+Sans&family=Lobster&family=Lobster+Two&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@100;400&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-:root {
-  --color-black: #000;
-  --color-white: #fff;
+/* HEADER */
+header {
+  width: 100%;
+  height: 19rem;
+  background: url("../img/ball-medio.jpg") no-repeat center;
+  object-fit: cover;
+  /* color: #ffe7d0fd; */
+  color: #fff;
+  padding: 0 4%;
+}
+header div {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 5rem;
+  font-family: "Bebas Neue";
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5882352941);
+  letter-spacing: 5px;
+}
+header p {
+  font-size: 1.5rem;
+  font-family: "Chakra Petch";
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5882352941);
+}
+header .redes-sociais {
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+header .redes-sociais a {
+  text-decoration: none;
+}
+header .redes-sociais a i {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+header .redes-sociais a i:hover {
+  text-shadow: 0px 0px 8px rgba(250, 250, 250, 0.8705882353);
+}
 
-  --color-main-top: #c4c3c377;
-  --color-maintop-text-hover: #4e4d4d;
-
-  --color-btn-menu: #ffd991;
-  --color-btn-menu-selecionado: #f3c368;
-  --color-btn-menu-selecionado-text: #5e3500;
-
-  --color-btn-media: #f8a711ce;
-
-  --color-btn-red-light: #ff0000a2;
-  --color-btn-red-dark: #ff0000d2;
-  --color-btn-blue-light: #0000ffad;
-  --color-btn-blue-dark: #0000ffd8;
-
-  --font-chakra: "Chakra Petch";
-  --font-bebas: "Bebas Neue";
+/* FOOTER */
+footer {
+  height: 10rem;
+  background-color: rgba(122, 122, 122, 0.6352941176);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 0.8rem;
+  font-family: "Open Sans";
+  text-shadow: none;
+  color: #494747;
+  /* text-shadow: 2px 2px 8px #fcfafa96; */
+  /* font-family: "Inclusive Sans"; */
 }
 
 * {
@@ -28,336 +78,402 @@
   box-sizing: border-box;
 }
 
-.main-top {
+main {
+  /* MAIN TOP  */
+  /* MAIN BOTTOM  */
+  /*  CONTEÚDO DOS CARDS */
+}
+main .main-top {
   padding: 0 4%;
   height: 2rem;
-  background-color: var(--color-main-top);
-
+  background-color: rgba(196, 195, 195, 0.4666666667);
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   gap: 1rem;
 }
-
-.main-top p {
+main .main-top p {
   font-size: 1.2rem;
-  font-family: var(--font-chakra);
-  color: var(--color-black);
+  font-family: "Chakra Petch";
+  color: #000;
 }
-
-/* .main-top p:first-of-type {
-  margin-left: 16rem;
-} */
-
-.main-top p:hover {
-  color: var(--color-maintop-text-hover);
+main .main-top p:hover {
+  color: #4e4d4d;
 }
-
-/* MAIN BOTTOM  */
-
-.main-bottom {
+main .main-bottom {
   width: 100%;
   height: 100%;
   padding: 0 2%;
 }
-
-.content-btns {
+main .main-bottom .content-btns {
   width: 100%;
   height: 8rem;
-
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
-
   margin-top: 2rem;
 }
-
-.btn {
+main .main-bottom .content-btns .btn {
   width: 10rem;
   height: 3rem;
-
-  background-color: var(--color-btn-menu);
-  box-shadow: 2px 2px 2px #00000085;
+  background-color: #ffd991;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5215686275);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
   font-size: 0.9rem;
-  font-family: var(--font-chakra);
+  font-family: "Chakra Petch";
+  color: #000;
   font-weight: bold;
-  color: var(--color-black);
 }
-
-.btn:hover {
-  background-color: var(--color-btn-menu-selecionado);
+main .main-bottom .content-btns .btn:hover {
+  background-color: #f3c368;
 }
-
-.btn.selecionado {
-  background-color: var(--color-btn-menu-selecionado);
-  color: var(--color-btn-menu-selecionado-text);
+main .main-bottom .content-btns .btn.selecionado {
+  background-color: #f3c368;
+  color: #5e3500;
 }
-
-/*  CONTEÚDO DOS CARDS */
-
-.content-cards {
-  width: 100%;
-  height: 100%;
+main .content-cards {
+  /* MÉDIA */
+  /* CONFERÊNCIA */
+  /*  CONTEÚDO DOS CARDS */
 }
-
-.content-cards ul {
-  width: 100%;
-  height: 100%;
-
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
-  place-items: center;
-  gap: 2rem;
-
-  margin-block: 3rem;
-}
-
-.card {
-  background-color: var(--color-white);
-  width: 17rem;
-  height: 35rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  border-radius: 1rem;
-  box-shadow: 2px 2px 10px #0000007e;
-}
-
-.img-card {
-  width: 100%;
-  height: 25rem;
-
-  overflow: hidden;
-  position: relative;
-}
-
-.img-card img {
-  width: 100%;
-  object-fit: cover;
-
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.img-card h1 {
-  width: 100%;
-  font-family: var(--font-bebas);
-  color: var(--color-white);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-}
-
-/* INFORMAÇÕES */
-
-.content-info {
-  width: 100%;
-  height: 10rem;
-
-  display: flex;
-  flex-direction: column;
-  /* gap: ; */
-}
-
-.info {
-  width: 100%;
-  height: 4.5rem;
-  margin-top: 1rem;
-}
-
-.info-top {
-  width: 100%;
-  height: 2.2rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  letter-spacing: 1px;
-  /* font-family: "Space Grotesk"; */
-}
-
-.info-bottom {
-  width: 100%;
-  height: 2.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.info-top,
-.info-bottom {
-  font-family: var(--font-bebas);
-  font-size: 1.1rem;
-}
-
-.score {
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.score h3 {
-  font-family: var(--font-chakra);
-  text-transform: uppercase;
-  font-size: 1.25rem;
-}
-
-.score-numbers {
-  background-color: var(--color-black);
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-
-  border-radius: 0.2rem;
-}
-
-.score-numbers p {
-  font-family: var(--font-chakra);
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--color-white);
-}
-
-/* MÉDIA */
-
-.box-media {
+main .content-cards .box-media {
   display: none;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
-
   margin-top: 4rem;
 }
-
-.show {
-  display: flex;
-}
-
-.btnAllMedia {
+main .content-cards .box-media .btnAllMedia {
   display: flex;
   gap: 2rem;
 }
-
-.btnMedia {
+main .content-cards .box-media .btnAllMedia .btnMedia {
   width: 6rem;
   height: 6rem;
-
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-color: var(--color-btn-media);
-
-  color: var(--color-black);
+  background-color: rgba(248, 167, 17, 0.8078431373);
   font-size: 0.9rem;
-  font-family: var(--font-chakra);
+  font-family: "Chakra Petch";
+  color: #000;
   font-weight: bold;
-  box-shadow: 2px 2px 2px #00000085;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5215686275);
 }
-
-.btnMedia:hover {
+main .content-cards .box-media .btnAllMedia .btnMedia:hover {
   opacity: 0.9;
 }
-
-.btnMedia.btnMediaSelecionado {
-  border: 2px solid var(--color-black);
+main .content-cards .box-media .btnAllMedia .btnMedia.btnMediaSelecionado {
+  border: 2px solid #000;
 }
-
-.subtitleMedia {
-  font-size: 1.7rem;
-  font-family: var(--font-chakra);
+main .content-cards .box-media .subtitleMedia {
   width: 100%;
+  font-size: 1.7rem;
+  font-family: "Chakra Petch";
+  color: #000;
   text-align: center;
   margin-bottom: 1rem;
 }
-
-.cardMedia {
+main .content-cards .box-media .cardMedia {
   width: 22rem;
   height: 7rem;
-
-  list-style-type: none;
-  background-color: var(--color-white);
-  border-radius: 1rem;
-  box-shadow: 2px 2px 10px #0000007e;
-
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4941176471);
 }
-
-.cardMedia p {
+main .content-cards .box-media .cardMedia p {
   font-size: 1.7rem;
-  font-family: var(--font-bebas);
-
+  font-family: "Bebas Neue";
+  color: #000;
   transition: all 0.2s ease-in-out;
 }
-
-.cardMedia p:hover {
+main .content-cards .box-media .cardMedia p:hover {
   transform: scale(1.1);
-  text-shadow: 0px 0px 2px #00000096;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5882352941);
 }
-
-/* CONFERÊNCIA */
-
-.box-conference {
-  display: none;
-  justify-content: center;
-  gap: 2rem;
-
-  margin: 3rem;
-}
-
-.showBtnsConference {
+main .content-cards .show {
   display: flex;
 }
-
-.btnConference {
+main .content-cards .box-conference {
+  display: none;
+  justify-content: center;
+  align-items: none;
+  gap: 2rem;
+  margin: 3rem;
+}
+main .content-cards .box-conference .btnConference {
   width: 7.5rem;
   height: 5rem;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
-
-  color: var(--color-white);
   font-size: 2rem;
-  font-family: var(--font-chakra);
+  font-family: "Chakra Petch";
+  color: #fff;
   font-weight: bold;
   letter-spacing: 3px;
-  box-shadow: 2px 2px 2px #00000085;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5215686275);
 }
-
-.btnConference.selecionadoConference {
-  border: 2px solid var(--color-white);
+main .content-cards .box-conference .btnConference.selecionadoConference {
+  border: 2px solid #fff;
   opacity: 0.6;
 }
-
-#east {
-  background-color: var(--color-btn-red-dark);
+main .content-cards .box-conference #east {
+  background-color: rgba(255, 0, 0, 0.8235294118);
+}
+main .content-cards .box-conference #east:hover {
+  background-color: rgba(255, 0, 0, 0.6352941176);
+}
+main .content-cards .box-conference #west {
+  background-color: rgba(0, 0, 255, 0.8470588235);
+}
+main .content-cards .box-conference #west:hover {
+  background-color: rgba(0, 0, 255, 0.6784313725);
+}
+main .content-cards .showBtnsConference {
+  display: flex;
+}
+main .content-cards .box-cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  place-items: center;
+  gap: 2rem;
+  margin-block: 3rem;
+}
+main .content-cards .box-cards .card {
+  width: 17rem;
+  height: 35rem;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4941176471);
+  /* INFORMAÇÕES */
+}
+main .content-cards .box-cards .card .img-card {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+main .content-cards .box-cards .card .img-card img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+main .content-cards .box-cards .card .img-card h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Bebas Neue";
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+main .content-cards .box-cards .card .content-info {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: ; */
+}
+main .content-cards .box-cards .card .content-info .info {
+  width: 100%;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+main .content-cards .box-cards .card .content-info .info .info-top {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  /* font-family: "Space Grotesk"; */
+}
+main .content-cards .box-cards .card .content-info .info .info-bottom {
+  width: 100%;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main .content-cards .box-cards .card .content-info .info .info-top,
+main .content-cards .box-cards .card .content-info .info .info-bottom {
+  font-size: 1.1rem;
+  font-family: "Bebas Neue";
+  color: #000;
+}
+main .content-cards .box-cards .card .content-info .score {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .content-cards .box-cards .card .content-info .score h3 {
+  font-size: 1.25rem;
+  font-family: "Chakra Petch";
+  color: #000;
+  text-transform: uppercase;
+}
+main .content-cards .box-cards .card .content-info .score .score-numbers {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  border-radius: 0.2rem;
+}
+main .content-cards .box-cards .card .content-info .score .score-numbers p {
+  font-size: 1.1rem;
+  font-family: "Chakra Petch";
+  color: #fff;
+  font-weight: bold;
 }
 
-#east:hover {
-  background-color: var(--color-btn-red-light);
+@media screen and (max-width: 1024px) {
+  /* FOOTER */
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  header p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  main .main-top p {
+    font-size: 1.1rem;
+  }
+  main .main-bottom .content-btns .btn {
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.8rem;
+  }
+  main .content-cards {
+    /* MÉDIA */
+    /* CONFERÊNCIA */
+  }
+  main .content-cards .box-media .subtitleMedia {
+    font-size: 1.4rem;
+  }
+  main .content-cards .box-conference .btnConference {
+    width: 7rem;
+    height: 4.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .redes-sociais a i {
+    font-size: 1rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  main .main-top p {
+    font-size: 0.9rem;
+  }
+  main .main-bottom .content-btns .btn {
+    width: 7rem;
+    height: 3rem;
+    font-size: 0.7rem;
+  }
+  main .content-cards {
+    /* MÉDIA */
+    /* CONFERÊNCIA */
+  }
+  main .content-cards .box-media .btnAllMedia .btnMedia {
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.7rem;
+  }
+  main .content-cards .box-media .subtitleMedia {
+    font-size: 1.1rem;
+  }
+  main .content-cards .box-media .cardMedia {
+    width: 19rem;
+  }
+  main .content-cards .box-media .cardMedia p {
+    font-size: 1.4rem;
+  }
+  main .content-cards .box-conference .btnConference {
+    width: 6.5rem;
+    height: 4rem;
+    font-size: 1.7rem;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  main .main-top p {
+    font-size: 0.8rem;
+  }
+  main .main-bottom .content-btns .btn {
+    width: 6rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
+  main .content-cards {
+    /* MÉDIA */
+    /* CONFERÊNCIA */
+  }
+  main .content-cards .box-media .btnAllMedia .btnMedia {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 0.6rem;
+  }
+  main .content-cards .box-media .subtitleMedia {
+    font-size: 0.9rem;
+  }
+  main .content-cards .box-media .cardMedia {
+    width: 17rem;
+    height: 6rem;
+  }
+  main .content-cards .box-media .cardMedia p {
+    font-size: 1.2rem;
+  }
+  main .content-cards .box-conference .btnConference {
+    width: 5.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+  /* FOOTER */
+  footer p {
+    font-size: 0.5rem;
+  }
 }
 
-#west {
-  background-color: var(--color-btn-blue-dark);
-}
-
-#west:hover {
-  background-color: var(--color-btn-blue-light);
-}
+/*# sourceMappingURL=style.css.map */
