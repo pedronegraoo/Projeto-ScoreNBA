@@ -1,0 +1,216 @@
+@media screen and (max-width: 1024px) {
+  /* FOOTER */
+  footer {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // HEADER
+  header {
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  }
+
+  // MAIN
+  main {
+    .main-top {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .main-bottom {
+      .content-btns {
+        .btn {
+          width: 8rem;
+          height: 3rem;
+
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .content-cards {
+      /* MÉDIA */
+      .box-media {
+        .subtitleMedia {
+          font-size: 1.4rem;
+        }
+      }
+
+      /* CONFERÊNCIA */
+      .box-conference {
+        .btnConference {
+          width: 7rem;
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  // HEADER
+  header {
+    .redes-sociais {
+      a i {
+        font-size: 1rem;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  // MAIN
+  main {
+    .main-top {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .main-bottom {
+      .content-btns {
+        .btn {
+          width: 7rem;
+          height: 3rem;
+
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .content-cards {
+      /* MÉDIA */
+      .box-media {
+        .btnAllMedia {
+          .btnMedia {
+            width: 5rem;
+            height: 5rem;
+
+            font-size: 0.7rem;
+          }
+        }
+
+        .subtitleMedia {
+          font-size: 1.1rem;
+        }
+
+        .cardMedia {
+          width: 19rem;
+
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      /* CONFERÊNCIA */
+      .box-conference {
+        .btnConference {
+          width: 6.5rem;
+          height: 4rem;
+
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+  footer {
+    p {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  // HEADER
+  header {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  // MAIN
+  main {
+    .main-top {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .main-bottom {
+      .content-btns {
+        .btn {
+          width: 6rem;
+          height: 3rem;
+
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .content-cards {
+      /* MÉDIA */
+      .box-media {
+        .btnAllMedia {
+          .btnMedia {
+            width: 4.5rem;
+            height: 4.5rem;
+            font-size: 0.6rem;
+          }
+        }
+
+        .subtitleMedia {
+          font-size: 0.9rem;
+        }
+
+        .cardMedia {
+          width: 17rem;
+          height: 6rem;
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      /* CONFERÊNCIA */
+      .box-conference {
+        .btnConference {
+          width: 5.5rem;
+          height: 3.5rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+  footer {
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}

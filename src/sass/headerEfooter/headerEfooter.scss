@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin size-family-textShadow($size, $family, $textShadow) {
+  font-size: $size;
+  font-family: $family;
+  text-shadow: $textShadow;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 19rem;
+  background: url("../img/ball-medio.jpg") no-repeat center;
+  object-fit: cover;
+  /* color: #ffe7d0fd; */
+  color: $color-white;
+
+  padding: 0 4%;
+
+  div {
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    @include size-family-textShadow(5rem, $font-bebas, 2px 2px 2px #00000096);
+    letter-spacing: 5px;
+  }
+
+  p {
+    @include size-family-textShadow(
+      1.5rem,
+      $font-chakra,
+      2px 2px 2px #00000096
+    );
+  }
+
+  .redes-sociais {
+    height: 20%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+    }
+
+    a i {
+      font-size: 1.2rem;
+      color: $color-white;
+      cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        text-shadow: 0px 0px 8px #fafafade;
+      }
+    }
+  }
+}
+
+/* FOOTER */
+
+footer {
+  height: 10rem;
+  background-color: $color-gray-light;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    @include size-family-textShadow(0.8rem, $font-openSans, none);
+    color: $color-text-gray;
+    /* text-shadow: 2px 2px 8px #fcfafa96; */
+    /* font-family: "Inclusive Sans"; */
+  }
+}
